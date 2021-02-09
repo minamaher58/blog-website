@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
-import { PageEvent } from "@angular/material";
+import { PageEvent } from "@angular/material/paginator";
+// import { PageEvent } from "@angular/material/pa";
 import { Subscription } from 'rxjs';
 import { AuthService } from "src/app/auth/auth.service";
 
