@@ -8,7 +8,7 @@ const userRoutes = require("./routes/user");
 
 const app = express();
 
-const uri = "mongodb+srv://mina:3N3xwn8ADxmQbC67@cluster0.3btwi.mongodb.net/test?retryWrites=true&w=majority";
+const uri = "mongodb+srv://mina:" + process.env.MONGO_ATLAS_PW +"@cluster0.3btwi.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: true})
 .then(() => {
   console.log('Connected to a database!');
